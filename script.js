@@ -42,3 +42,27 @@ const a = prompt('Один из последних просмотренных ф
       personalMovieDB.movies[c] = d;
 
       console.log(personalMovieDB);
+
+
+
+/* Задачи для самостоятельного решения: */
+
+console.log( NaN || 2 || undefined ); /* - Ответ: 2, т.к. это первое значение true. */
+ 
+console.log( NaN && 2 && undefined ); /* - Ответ: NaN, т.к. это первое ложное значение.NaN
+Но если все правдивые, то возьмется последнее значение. */
+ 
+console.log( 1 && 2 && 3 ); -/*  Ответ: 3. */
+ 
+console.log( !1 && 2 || !3 ); /* - Ответ: false. */
+ 
+console.log( 25 || null && !3 ); /* - Ответ: 25. */
+ 
+console.log( NaN || null || !3 || undefined || 5); /* - Ответ: 5. */
+ 
+console.log( NaN || null && !3 && undefined || 5); /* - Ответ: 5. */
+
+
+ //          1.true     2.true
+console.log( 5 === 5 && 3 > 1 || 5); /* - Ответ: true. Согласно таблице приоритетов. */
+
