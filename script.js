@@ -149,12 +149,41 @@ console.log(arr);
 а к элементам обращаемся все так же: arr[0], arr[1] и т.д. 
 Должен получиться такой же массив.*/
 
+const arr = [5, 6, 7, 8, 9, 10];
+const result = [];
+
+for (let i = 0; i < arr.length; i++) {
+    result[i] = arr[i]; 
+} 
+console.log(result);
+
 
 /* 2. Измените данный массив так, чтобы все числа были увеличены в 2 раза, 
 а если попадается строка - то к ней было добавлено - "done". 
 Для определения типа данных используйте typeof();
 Должно получиться: [10, 20, 'Shopping - done', 40, 'Homework - done']. */
 
+const arr = [7, 10, 'Shopping', 12];
+
+for (let i=0; i < arr.length; i++) {
+    if (typeof arr[i] === 'number') {
+        arr[i] = arr[i] * 2;
+    }
+    if (typeof arr[i] === 'string') {
+        arr[i] = arr[i] + ' - done';
+    }
+}
+console.log(arr);
 
 /* 3. Разверните массив data наоборот при помощи цикла и запишите данные в массив result.
 Должно получиться: ['Homework - done', 20, 'Shopping - done', 10, 5]. */
+
+const arr = [7, 10, 'Shopping', 12];
+const result = [];
+let b = 0;
+
+for (let i=3; i >= 0; i--) {
+    result[b] = arr[i];
+    b++;
+}
+console.log(result);
